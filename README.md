@@ -148,6 +148,25 @@ Contoh :
     }
 
 
+=> OOP – Object Oriented  Programming
+
+OOP merupakan singkatan dari Object Oriented Programming. Jenis oriented sendiri terbagi menjadi 2 jenis, yaitu:
+
+-	Procedural Programming, yaitu menulis prosedur atau fungsi yang melakukan operasi pada data
+
+-	Sedangkan Object Oriented Programming, yaitu membuat objek yang berisi data dan fungsi.
+
+Kelebihan OOP:
+
+-	Menghindari pengulangan kode
+
+-	Mudah dilakukan debug dan dimodifikasi
+
+-	Lebih mudah dijalankan atau diaplikasikan
+
+-	Waktu pengembangan lebih singkat
+
+
 
 Contoh Soal 1
 
