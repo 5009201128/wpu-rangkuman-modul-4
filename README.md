@@ -1,11 +1,11 @@
 # wpu-rangkuman-modul-4
 Laporan Rangkuman Pembelajaran
-	Pointers
+=>	Pointers
 -	Merupakan penunjuk suatu variabel
 -	Karena memori komputer berbentuk seperti rangkaian sel memori, maka dibutuhkan pendeklarasian untuk menyimpan suatu nilai dengan memberikan alamat pada lokasi tertentu dalam memori
 Deklarasi :
 int *ptr;
-	Alamat operator 
+=>	Alamat operator 
 -	Dimulai dengan tanda ampersand (&) yang berarti menunjukkan operator alamat
 
 Contoh :
@@ -20,7 +20,7 @@ cin, getch ();
 return 0;
 }
 
-	Assignment variabel pointer
+=>	Assignment variabel pointer
 Pada assignment tidak perlu menggunakan tanda *
 
 Contoh :
@@ -30,7 +30,7 @@ a = 5;
 ptr = &a;
 
 
-	Operator defference
+=>	Operator defference
 -	Penggunaan tanda * pada operator berfungsi untuk mengakses nilai yang ditunjuk dari variabel pointer
 
 Contoh :
@@ -49,7 +49,7 @@ return 0;
 }
 
 
-	Double pointer
+=>	Double pointer
 -	Sederhananya, pada suatu program dapat memuat lebih dari satu pointer sehingga terdapat dua simbol *
 
 Contoh :
@@ -63,7 +63,7 @@ printf ("%d\n", **dbptr);
 return 0;
 }
 
-	Pointer dan Array
+=>	Pointer dan Array
 Array merupakan penyusunan data yang berupa sekuensial, sehingga alamat data yang disimpan secara berurutan.
 
 Contoh :
@@ -89,7 +89,7 @@ cout << "Nilai indeks ["<<i<<"] adalah = " << *ptrArray+i << endl;
 return 0;
 }
 
-	Pointer dan fungsi
+=>	Pointer dan fungsi
 Pada penggunaan pointer pada fungsi, pointer berfungsi untuk menunjukkan perubahan yang terjadi dengan cara meninjau input pada parameter. Biasanya, pada fungsi digunakan cara pass by value, namun bias juga menggunakan cara pass by argument.
 -	Pass by value
 Memiliki makna pengubahan argument yang disalin ke dalam parameter fungsi, namun perubahannya tidak mengubah variabel pada fungsi awal.
