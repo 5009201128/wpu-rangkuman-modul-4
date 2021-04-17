@@ -1,5 +1,5 @@
 # wpu-rangkuman-modul-4
-Laporan Rangkuman Pembelajaran
+============================================================Laporan Rangkuman Pembelajaran========================================================================
 =>	Pointers
 -	Merupakan penunjuk suatu variabel
 -	Karena memori komputer berbentuk seperti rangkaian sel memori, maka dibutuhkan pendeklarasian untuk menyimpan suatu nilai dengan memberikan alamat pada lokasi tertentu dalam memori
@@ -151,3 +151,128 @@ Pembahasan:
     cout << "Nilai yang ada pada variabel pointer adalah " << *pointer << endl;
     return 0;
     }
+
+Contoh Soal 2
+Tukarkan nilai a dan b
+
+Pembahasan :
+
+    #include<iostream.h>
+    #include<conio.h>
+    void Tukar(int a, int b);
+    void main()
+    {
+    int a=8, b=-5;
+    cout<<"Nilai a dan b sebelum ditukar : "<<a<<" & "<<b;
+    Tukar(a,b);
+     cout<<"\nNilai a dan b setelah ditukar : "<<a<<" & "<<b;
+    getch();
+    }
+    void Tukar(int x, int y)
+    {
+    int z;
+    z = x;
+    x = y;
+    y = z;
+    }
+
+
+
+======================================================Tugas Magang 2===========================================================================================
+1.	Write a program that defines a shape class with a constructor that gives value to width and height. The define two sub-classes triangle and rectangle, that calculate the area of the shape area (). In the main, define two variables a triangle and a rectangle and then call the area() function in this two varibles.
+2.	Write a program with a mother class and an inherited daugther class.Both of them should have a method void display ()that prints a message (different for mother and daugther).In the main define a daughter and call the display() method on it.
+3.	Write a probram with a mother class animal. Inside it define a name and an age variables, and set_value() function.Then create two bases variables Zebra and Dolphin which write a message telling the age, the name and giving some extra information (e.g. place of origin).
+Jawaban :
+1.	Program sebagai berikut ini
+
+        #include <iostream>
+        using namespace std;
+        void HitungLuasPersegiPanjang(float pj, float lb);
+        void HitungLuasSegitiga(float tg, float al);
+        main(){
+        float panjang, lebar;
+        cout << "panjang = "; 
+        cin >> panjang;
+        cout << "lebar = "; 
+        cin >> lebar;
+        HitungLuasPersegiPanjang(panjang, lebar);
+        float tinggi, alas;
+        cout << "alas = ";
+        cin >> alas;
+        cout << "tinggi = ";
+        cin >> tinggi;
+        HitungLuasSegitiga(alas, tinggi);
+        }
+        void HitungLuasPersegiPanjang(float pj, float lb){
+        float Luaspersegipanjang;
+        Luaspersegipanjang = pj * lb;
+        cout << "Luas Persegi Panjang= "<< Luaspersegipanjang;
+        cout << endl;
+        }
+        void HitungLuasSegitiga(float tg, float al){
+        float Luassegitiga;
+        Luassegitiga = tg * al / 2;
+        cout << "Luas Segitiga= "<< Luassegitiga;
+        }
+    
+2.	Program sebagai berikut ini
+
+        #include <iostream>
+        #include <string>
+        using namespace std;
+        class MyFamily {
+        public:
+        void display() {
+        cout << "Nama saya Sely" << endl;
+        cout << "Umur saya 7 tahun" << endl;
+        }
+        };
+        class MyMother: public MyFamily {
+        };
+        class MyDaughter: public MyMother {
+        };
+        int main() {
+        MyDaughter myObj;
+        myObj.display();
+        return 0;
+        } 
+
+3.	Program sebagau berikut ini
+
+        #include <iostream>
+        #include <string>
+        using namespace std;
+        class Animal {
+        public:
+        void animalSound() {
+        cout << "The animal makes a sound" << endl;
+        }
+        };
+        class Zebra : public Animal {
+        public:
+        void animalSound(string nama, int umur, string asal) {
+        cout << "masukkan nama : " << nama << endl;
+        cout << "masukkan umur : " << umur << endl;
+        cout << "masukkan asal : " << asal << endl;
+        cin >> nama >> umur >> asal;
+        }
+        };
+        class Dolphin : public Animal {
+        public:
+        void animalSound(string nama, int umur, string asal) {
+        cout << "masukkan nama : " << nama << endl;
+        cout << "masukkan umur : " << umur << endl;
+        cout << "masukkan asal : " << asal << endl;
+        cin >> nama >> umur >> asal;
+        }
+        };
+        int main() {
+        Animal myAnimal;
+        Zebra myZebra;
+        Dolphin myDolphin;
+
+        myAnimal.animalSound();
+        myZebra.animalSound();
+        myDolphin.animalSound();
+        return 0;
+        } 
